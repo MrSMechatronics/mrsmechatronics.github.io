@@ -1,0 +1,1 @@
+python "C:\Users\user\Documents\Web\www\Site\Site\__init__.py"
