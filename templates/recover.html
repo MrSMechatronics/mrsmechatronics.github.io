@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Recover - Mr.S Mechatronics{% endblock %}
+{% block head %}
+<style>
+    .form{
+        width: 20%;
+        padding: 25px;
+        background-color: #fffff080;
+        border-radius: 20px;
+    }
+
+    body{
+        background-image: url("../static/bg.jpg");
+    }
+</style>
+{% endblock %}
+{% block content %}
+<div class="page">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <center>
+        <form action="" method="POST" class="form">
+            <input type="email" id="email" class="form-control" name="email" required></input>
+            <br>
+            <input type="submit" class="btn btn-primary" value="Recover Account">
+        </form>
+    </center>
+</div>
+{% endblock %}

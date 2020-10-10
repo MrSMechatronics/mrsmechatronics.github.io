@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+{% block title %}Mr.S Mechatronics{% endblock %}
+{% block content %}
+<div class="page">
+    <a name="home"></a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container segment">
+        <div class="row">
+            <div class="col-sm-6">
+                <H1>Welcome To Mr.S Mechatronics</H1>
+                <p>Here You Get Easy To Understand In-Depth Video Tutorials About Making Our Place In The Cyber
+                    World</p>
+                <a href="https://youtube.com/mrsmechatronics?sub_confirmation=1" target="_blank"><button
+                        class="btn btn-primary">Subscribe Us On YouTube</button></a>
+            </div>
+            <div class="col-sm-6">
+                <a href="https://youtube.com/mrsmechatronics?sub_confirmation=1" target="_blank"><img
+                        src="{{ url_for('static', filename = 'favicon.png') }}" class="img"></img></a>
+            </div>
+        </div>
+    </div>
+    <a name="about"></a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <a href="https://youtube.com/mrsmechatronics?sub_confirmation=1" target="_blank"><img
+                        src="{{ url_for('static', filename = 'youtube.jpg') }}" class="img"></img></a>
+            </div>
+            <div class="col-sm-6">
+                <H1>About</H1>
+                <p>Mr.S Mechatronics Is A YouTube Channel And Site Managed By Sushant Shah, Created At The Age Of
+                    12.</p>
+                <a href="Videos/" target="_blank"><button class="btn btn-primary">Know More</button></a>
+                <a href="https://youtube.com/mrsmechatronics?sub_confirmation=1" target="_blank"><button
+                        class="btn btn-secondary">Subscribe Us On YouTube</button></a>
+            </div>
+        </div>
+    </div>
+    <a name="videos"></a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <H1>Videos</H1>
+                <p>Watch The Tutorial Videos On Our Website</p>
+                <a href="Videos/" target="_blank"><button class="btn btn-primary">Watch The Videos</button></a>
+                <a href="https://youtube.com/mrsmechatronics?sub_confirmation=1" target="_blank"><button
+                        class="btn btn-secondary">Subscribe Us On YouTube</button></a>
+            </div>
+            <div class="col-sm-6">
+                <a href="https://youtube.com/mrsmechatronics?sub_confirmation=1" target="_blank"><img
+                        src="{{ url_for('static', filename = 'youtube.jpg') }}" class="img"></img></a>
+            </div>
+        </div>
+    </div>
+    <a name="contact"></a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <form action="mailto:mr.smechatronics@gmail.com">
+                    <label for="from">Email:</label>
+                    <input type="email" id="from" class="form-control" required></input>
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" class="form-control" required></input>
+                    <label for="message">Message:</label>
+                    <textarea id="message" class="form-control" required></textarea>
+                    <br>
+                    <input type="submit" class="btn btn-primary" value="Mail Us"></input>
+                </form>
+                <br>
+                <a href="something" target="_blank"><button class="btn btn-secondary">Add Us On
+                        WhatsApp</button></a>
+            </div>
+            <div class="col-sm-6">
+                <H1>Contact Us</H1>
+                <p>Leave A Mail Or Message In Whatsapp</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+{% endblock %}

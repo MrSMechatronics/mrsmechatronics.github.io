@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Watch - Mr.S Mechatronics{% endblock %}
+{% block head %}
+    <style>
+        .page{
+            width: 80%;
+            border-radius: 20px;
+            height: 80%;
+            padding: 25px;
+            background-color: #fffff0bf;
+        }
+
+        body{
+            background-image: url("../static/bg.jpg");
+            background-size: cover
+            ;
+            background-repeat: no-repeat;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+<center>
+    <div class="container page">
+        <h1>{{ data[0][2] }}</h1>
+        <iframe src="{{ vidUrl }}" alt="" style="border-radius: 20px; width: 80%;"></iframe><br>
+        {{ data[0][4] }}
+    </div>
+</center>
+{% endblock %}

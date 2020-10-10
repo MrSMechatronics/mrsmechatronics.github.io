@@ -1,0 +1,33 @@
+
+
+
+{% conn = mysqlYT.connection.cursor() %}
+{% VidList = conn.execute('SELECT * FROM `videos`') %}
+{% #if VidList: %}
+{% #    vids = conn.fetchall() %}
+
+
+
+    <table>
+    {% for video in Videos %}
+        <h1>{{ video }}</h1>
+        <tr>
+            <td>{{ video[0] }}</td>
+            <td>{{ video[1] }}</td>
+            <td>{{ video[2] }}</td>
+            <td>{{ video[3] }}</td>
+            <td>{{ video[4] }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+
+
+    <!--<table border="2">-->
+    <!--<tr>-->
+        <!--<td>{{ video[0] }}</td>-->
+        <!--<td>{{ video[1] }}</td>-->
+        <!--<td>{{ video[2] }}</td>-->
+        <!--<td>{{ video[3] }}</td>-->
+        <!--<td>{{ video[4] }}</td>-->
+    <!--</tr>-->
+    <!--</table>-->

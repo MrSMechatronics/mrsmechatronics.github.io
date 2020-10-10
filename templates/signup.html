@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %}Mr.S Mechatronics{% endblock %}
+
+{% block head %}
+<style>
+    .form{
+        width: 20%;
+        padding: 25px;
+        background-color: #fffff080;
+        border-radius: 20px;
+    }
+
+    body{
+        background-image: url("../static/bg.jpg");
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="page">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <center>
+        <form action="" method="POST" class="form">
+                {{ form.hidden_tag() }}
+                {{ form.Nickname.label( id="Nickname", class="label") }}
+                {{ form.Nickname( id="Nickname", class="form-control") }}
+
+                {{ form.Email.label( id="Email", class="label") }}
+                {{ form.Email( id="Email", class="form-control") }}
+
+                {{ form.Password.label( id="Password", class="label") }}
+                {{ form.Password( id="Password", class="form-control") }}
+
+                {{ form.rep_password.label( id="rep_password", class="label") }}
+                {{ form.rep_password( id="rep_password", class="form-control") }}
+                <br>
+                <input type="submit" class="btn btn-primary" value="Create Account"></input>
+        </form>
+        <form action="recover" method="GET" class ="Form">
+            <input type="submit" class="btn btn-tertiary" value="Recover Account">
+        </form>
+    </center>
+<div>
+{% endblock %}

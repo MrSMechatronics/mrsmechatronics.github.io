@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 10vh;
+}
+
+nav{
+    padding: 0px;
+    color: #3f4246;
+    background-color: whitesmoke;
+    transition: 1s;
+}
+nav:hover{
+    background-color: #3f4246;
+    transition: 1s;
+    box-shadow: 0 5px 10px;
+}
+
+.navbar-style{
+    box-shadow: 0 5px 10px;
+}
+
+.logo{
+    height: 48px;
+}
+
+.nav-btn{
+    height: 10vh;
+    margin: 0px;
+    text-decoration: none;
+}
+
+.page{
+    margin-top: 30px;
+}
+
+.img{
+    width: 500px;
+}
+
+.nav-item:hover{
+    color: whitesmoke;
+    transition: 1s;
+}
+
+html{
+    scroll-behavior: smooth;
+}

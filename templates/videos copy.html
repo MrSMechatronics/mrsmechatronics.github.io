@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Videos - Mr.S Mechatronics{% endblock %}
+{% block content %}
+    <br>
+    <br>
+    {% for video in videos %}
+    <table border="0">
+        <div class="container">
+            <td>
+            <div class="container ml-4" style="float:left;">
+            <img src="{{ video[1] }}"></img>
+            </div>
+            </td>
+            <td>
+            <div class="container ml-4" style="float:right;">
+                <a href="{{ url_for('watch', token=video[0]) }}">
+                    <h2 style="text-decoration: none;">{{ video[2] }}</h2>
+                    <p style="text-decoration: none;">{{ video[4] }}</p>
+                </a>
+            </div>
+            </td>
+        </div>
+    </table>
+    {% endfor %}
+{% endblock %}

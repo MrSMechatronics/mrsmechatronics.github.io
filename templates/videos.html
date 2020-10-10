@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}Videos - Mr.S Mechatronics{% endblock %}
+{% block head %}
+<style>
+    .txt{
+        text-decoration: none;
+        color: black;
+    }
+
+    .vid-box{
+        width: 60%;
+        border-radius: 20px;
+        background-color: whitesmoke;
+        border: thick;
+    }
+
+    body{
+        background-color: white;
+    }
+</style>
+{% endblock %}
+{% block content %}
+    <br>
+    <br>
+    {% for video in videos %}
+        <div class="container vid-box">
+            <a href="{{ url_for('watch', token=video[0]) }}">
+                    <div class="container ml-4">
+                        <br>
+                        <img src="{{ video[1] }}" style="margin-right: 20px;"></img>
+                        <h2 class="txt">{{ video[2] }}</h2>
+                        <p class="txt">{{ video[4] }}</p>
+                        <br>
+                    </div>
+                </p>
+            </a>
+        </div>
+        <br>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %}Mr.S Mechatronics{% endblock %}
+
+{% block head %}
+<style>
+    .form{
+        width: 20%;
+        padding: 25px;
+        background-color: #fffff0bf;
+    }
+
+    body{
+        background-image: url("../static/bg.jpg");
+        background-size: cover
+        ;
+        background-repeat: no-repeat;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="page">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <center>
+        <form action="" method="POST" class="form">
+            {{ form.Email.label( id="Email", class="label") }}
+            {{ form.Email( id="Email", class="form-control") }}
+
+            {{ form.Password.label( id="Password", class="label") }}
+            {{ form.Password( id="Password", class="form-control") }}
+            <br>
+            <input type="submit" class="btn btn-primary" value="Login"></input>
+        </form>
+    </center>
+<div>
+{% endblock %}
