@@ -1,0 +1,9 @@
+mysql.connector
+bcrypt
+firebase_admin
+flask
+datetime import timedelta
+flask_mysqldb import MySQL
+flask_wtf import FlaskForm
+wtforms
+wtforms.validators
