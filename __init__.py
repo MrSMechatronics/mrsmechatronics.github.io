@@ -4,6 +4,10 @@ from packages import *
 def home():
     return render_template("index.html")
 
+@app.route("/favicon.ico")
+def home():
+    return url_for("static", "favicon.png")
+
 @app.route("/videos")
 @app.route("/Videos")
 @app.route("/videos/")
