@@ -85,11 +85,9 @@ Pillow==7.2.0
 pipwin==0.5.0
 pkginfo==1.5.0.1
 playsound==1.2.2
-pocketsphinx @ file:///C:/Users/user/Downloads/pocketsphinx-0.1.15-cp38-cp38-win_amd64.whl
 protobuf==3.13.0
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
-PyAudio @ file:///C:/Users/user/pipwin/PyAudio-0.2.11-cp38-cp38-win_amd64.whl
 pycocotools-windows==2.0.0.2
 pycparser==2.20
 pygame==1.9.6
